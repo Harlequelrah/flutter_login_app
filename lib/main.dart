@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,7 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 10.0, bottom: 40.0),
+                  padding: const EdgeInsets.only(
+                      left: 55.0, top: 10.0, bottom: 40.0),
                   child: Text(
                     "BIENVENUE SUR NOTRE PAGE DE CONNEXION",
                     style: TextStyle(
@@ -158,7 +160,41 @@ class _MyHomePageState extends State<MyHomePage> {
                                   ),
                                 )))
                       ],
-                    ))
+                    )),
+                const SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  // padding: const EdgeInsets.all(30),
+                  padding: EdgeInsets.fromLTRB(100, 15, 15, 0),
+                  child: Row(
+                    // mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 60,
+                        width: 400,
+                        child: ElevatedButton(
+                            style: const ButtonStyle(
+                                foregroundColor:
+                                    WidgetStatePropertyAll(Color(0xFFFF2400)),
+                                backgroundColor:
+                                    WidgetStatePropertyAll(Colors.amber)),
+                            onPressed: () {
+                              print("ok");
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.all(15.0),
+                              child: Text(
+                                "Connexion",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                            )),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

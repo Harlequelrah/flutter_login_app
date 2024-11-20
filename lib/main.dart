@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 20,
                 ),
                 Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -166,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Padding(
                   // padding: const EdgeInsets.all(30),
-                  padding: EdgeInsets.fromLTRB(100, 15, 15, 0),
+                  padding: const EdgeInsets.fromLTRB(100, 15, 15, 0),
                   child: Row(
                     // mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
